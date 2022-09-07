@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "date-fns": "^2.29.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0"
+  },
+  "name": "top-todo-list",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeGLee/TOP-ToDo-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeGLee/TOP-ToDo-list/issues"
+  },
+  "homepage": "https://github.com/JoeGLee/TOP-ToDo-list#readme",
+  "description": ""
+}

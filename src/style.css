@@ -1,0 +1,316 @@
+:root{
+    --font-color: #f7f7ff;
+    --header-color: #495867;
+    --nav-background: #577399;
+}
+
+
+
+*{
+    margin: 0;
+    font-family:sans-serif;
+}
+body{
+    margin: 0;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
+    
+}
+/* ------Header------ */
+.header{
+    height: 100px;
+    grid-column: 1/3;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+}
+
+.headerTitle{
+    margin-left: 80px;
+
+    color: var(--font-color);
+}
+
+/* ------NavBar----- */
+
+/* Main nav */
+.nav{
+    background-color: var(--nav-background);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.btnContainer{
+    justify-self: center;
+    padding: 0;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btns{
+    list-style-type: none;
+}
+
+.navBtns{
+    width: 100px;
+    font-size: 30px;
+    border-style: none;
+    background-color: var(--nav-background);
+    color: var(--font-color);
+}
+
+.navBtns:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* project */
+
+/* main project container */
+.projectContainer{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 20px;
+}
+
+
+.projectTitle{
+    color: var(--font-color);
+    text-decoration: underline;
+}
+/* project userinput */
+.addProjectBtn{
+    font-size: 20px;
+    border-style: none;
+    background-color: var(--nav-background);
+    color: var(--font-color);
+}
+
+.addProjectBtn:hover{
+    color: #FE5F55;
+    cursor: pointer;
+}
+
+.projectInput{
+    transform: scale(0);
+    background-color: #FE5F55;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+
+   
+}
+
+
+#name{
+    width: 150px;
+    height: 30px;
+    background-color: #FE5F55;
+    color: black;
+    border-style: none;
+    border-bottom: 1px solid;
+}
+
+#priority{
+    height: 30px;
+    margin-left: 5px;
+    background-color: #FE5F55;
+}
+
+.submitProject, .resetProject{
+    background-color: #FE5F55;
+    border-style: none;
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.submitProject{
+    justify-self: end;
+}
+
+.submitProject:hover, .resetProject:hover{
+    background-color: #fdbab5;
+    color: black;
+    cursor: pointer;
+}
+
+.project{
+    display: flex;
+    gap: 20px;
+}
+
+.projectName{
+    color: var(--font-color);
+}
+
+.red{
+    margin-top: 3px;
+   width: 15px;
+   height: 15px;
+   border-radius: 10px;
+    color: var(--font-color);
+    background-color: red;
+    border: 2px solid;
+}
+.green{
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    color: var(--font-color);
+    border: 2px solid;
+    background-color: rgb(83, 181, 83);
+}
+.orange{
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    color: var(--font-color);
+    border: 2px solid;
+    background-color: rgb(247, 171, 28);
+}
+
+.deleteProject{
+    background-color: var(--nav-background);
+    border-style: none;
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+.deleteProject:hover{
+    color:#FE5F55;
+    cursor: pointer;
+}
+
+.projectName:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.clicked{
+    color: #FE5F55;
+}
+
+.todoContainer{
+    margin-top: 50px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addTask{
+    font-size: 40px;
+    width: 70px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border-style: none;
+    color: var(--font-color);
+    background-color: var(--nav-background);
+}
+
+.addTask:hover{
+   background-color: #697785;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.todoForm{
+    transform: scale(0);
+    margin-bottom: 10px;
+    width: 80%;
+    height: 8%; 
+    border-radius: 20px;
+    border: solid black 3px;
+    background-color: #697785;
+    display: flex;
+
+    gap: 25px;
+    align-items: center;
+}
+.addTaskBtnContainer{
+    display: flex;
+    gap: 10px;
+    margin-left: 25%;
+}
+
+.taskInput{
+    margin-left: 50px;
+}
+
+.addTaskBtn,.cancelTaskAddBtn{
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.addTaskBtn:hover{
+    cursor: pointer;
+    background-color: #93dc5f;
+    color: var(--font-color);
+}
+.cancelTaskAddBtn:hover{
+    cursor: pointer;
+    background-color: #FE5F55;
+    color: var(--font-color);
+}
+
+.active{
+    transform: scale(1);
+}
+
+.taskContainer{
+    width: 80%;
+    height: 6%;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
+.taskName{
+    margin-left: 50px;
+   
+}
+
+.taskContainer > p{
+    font-size: 20px;
+}
+
+.deleteTask{
+    margin-right: 30px;
+    border-style: none;
+    background-color: var(--header-color);
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+.deleteTask:hover{
+    color:#FE5F55;
+}
